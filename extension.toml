@@ -1,0 +1,12 @@
+id = "inform6"
+name = "Inform 6 Language Support"
+version = "1.0.0"
+schema_version = 1
+authors = ["Sam Win-Mason <sam@albedogames.com>"]
+description = "Zed language support for the Inform 6 programming language."
+repository = "https://github.com/Or4c/zed-inform6"
+languages = ["languages/inform6"]
+
+[grammars.inform6]
+repository = "https://github.com/Or4c/tree-sitter-inform6"
+commit = "9a4ab3aedbbd08898235cc130de5b4d5c32dd34a"

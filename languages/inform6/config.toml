@@ -1,0 +1,17 @@
+name = "Inform 6"
+grammar = "inform6"
+path_suffixes = ["inf", "h"]
+line_comments = ["! "]
+autoclose_before = ",]}"
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = [
+        "comment",
+        "string",
+    ] },
+    { start = "'", end = "'", close = true, newline = false, not_in = [
+        "comment",
+        "string",
+    ] },
+]
