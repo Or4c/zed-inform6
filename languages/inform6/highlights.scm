@@ -12,7 +12,7 @@
 (serial) @constant
 (release (number) @number) @constant
 (nothing) @keyword
-(action) @function
+(action (_) @function) @function
 [
     "++"
     "--"
@@ -25,13 +25,21 @@
     (array)
 ] @type
 
+; Objects
 (object class_name: (identifier) @type)
+(prop_mod) @keyword
+(attr_mod) @keyword
+(object data_id: (identifier) @property)
+(function_sig (identifier) @function)
 (routine_statement (identifier)) @function
 (routine_message) @function
 (array_access) @property
-(property_access (_)(identifier)) @property
+(property_access (_)(identifier) @property)
 (function_sig) @function
 (embedded_routine) @function
+(compiler_directive) @preproc
+
+; todo = properties and function args and sort out the 'has'
 
 ; Punctuation
 [
@@ -47,10 +55,6 @@
 
 ; Keywords
 [
-    "with"
-    "has"
-    "private"
-    "class"
     "if"
     "objectloop"
     "else"
