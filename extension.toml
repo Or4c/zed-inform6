@@ -8,4 +8,4 @@ repository = "https://github.com/Or4c/zed-inform6"
 
 [grammars.inform6]
 repository = "https://github.com/Or4c/tree-sitter-inform6"
-commit = "fee4bfce496c2631773836ae34fab8f20b73a945"
+commit = "188881e842ebec6ae1403e042964819bf0bfff0a"
