@@ -1,5 +1,4 @@
-; Routine
-
+; Routines
 (function_block) @indent
 (routine "]" @end) @indent
 
@@ -7,5 +6,9 @@
 (object ";" @end) @indent
 (embedded_routine "]" @end) @indent
 
-(grammar_clause) @indent
+; Conditional code blocks
 (code_block "}" @end) @indent
+(case) @indent
+
+; Grammar
+(grammar_clause) @indent
