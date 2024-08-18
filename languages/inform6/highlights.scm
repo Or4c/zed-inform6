@@ -26,18 +26,20 @@
 ] @type
 
 ; Objects
-(object class_name: (identifier) @type)
+(object class_name: (identifier) @constructor)
+(object (identifier) @label)
 (prop_mod) @keyword
-(attr_mod) @keyword
-(object data_id: (identifier) @property)
+(class_assignment) @keyword
 (function_sig (identifier) @function)
-(routine_statement (identifier)) @function
+(routine_call (identifier)) @function
 (routine_message) @function
 (array_access) @property
 (property_access (_)(identifier) @property)
+(property_access (_)(routine_message) @function)
 (function_sig) @function
 (embedded_routine) @function
 (compiler_directive) @preproc
+(ERROR) @title
 
 ; todo = properties and function args and sort out the 'has'
 
@@ -77,4 +79,5 @@
     "spaces"
     "noun"
     "scope"
+    "->"
 ] @keyword
