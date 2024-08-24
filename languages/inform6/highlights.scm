@@ -26,8 +26,13 @@
 ] @type
 
 ; Objects
+
+; has hilighting
+(object (object_body (prop_mod) @keyword (#eq? @keyword "has")  (identifier) @label))
+(object_body (_)(identifier)? @label)
 (object class_name: (identifier) @constructor)
 (object (identifier) @label)
+(object (identifier) @constructor)
 (prop_mod) @keyword
 (class_assignment) @keyword
 (function_sig (identifier) @function)
